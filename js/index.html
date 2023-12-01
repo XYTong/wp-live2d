@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Live2d Cubism 3</title>
+    <link rel="icon" href="../avatar.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Canvas -->
+    <div class="Canvas left"></div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Live2DCubismCore -->
+    <script src="js/live2dcubismcore.min.js"></script>
+
+    <!-- Include Pixi. -->
+    <script src="js/pixi.min.js"></script>
+
+    <!-- Include Cubism Components. -->
+    <script src="js/live2dcubismframework.js"></script>
+    <script src="js/live2dcubismpixi.js"></script>
+
+    <!-- User's Script -->
+    <script src="js/charData.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/litstronger/live2d-moc3@master/js/l2d.js"></script>
+    <script src="js/main_bb.js"></script>
+    <!-- Canvas -->
+    <div class="Canvas"  id="L2dCanvas"></div>
+    <script>
+        var config = {
+            width: window.innerWidth,
+            height: window.innerHeight,
+            left: '0px',
+            bottom: '0px',
+            basePath: 'https://cdn.jsdelivr.net/gh/alg-wiki/AzurLaneL2DViewer@gh-pages/assets',
+            role: 'bisimai_2',
+            opacity: 1,
+            mobile: false
+        }
+        var v = new Viewer(config); 
+    </script>
+</body>
+</html>
